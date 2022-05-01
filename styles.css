@@ -1,0 +1,60 @@
+/* ---------- Main style ---------- */
+body {
+  background-color: #f7f5ef;
+  width: 50%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Tahoma;
+  color:rgb(68, 68, 68);
+}
+
+h1, h2{
+  font-weight: 500;
+}
+
+p{
+  text-align: justify;
+}
+
+
+
+/* ---------- Table style ---------- */
+table{
+  text-align:left;
+  vertical-align:top;
+}
+
+/* <th> stands for header cell */
+/* Overhide the "font-weight" of the "th" element in CSS */
+/* <=> first row of a table not bold */
+th{
+    font-weight: normal;
+    padding-top:10px;
+    padding-right:60px;
+    padding-bottom:10px;
+}
+
+/* <td> stands for data cell */
+td{
+  padding-top:10px;
+  padding-right:60px;
+  padding-bottom:10px;
+}
+
+
+/* ---------- List style ---------- */
+ul{
+  list-style-type: circle;
+  line-height: 30px;
+  text-align: justify;
+}
+
+
+/* ---------- Specific styles ---------- */
+.bio{
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
