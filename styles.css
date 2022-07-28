@@ -1,24 +1,42 @@
 /* ---------- Main style ---------- */
 body {
-  background-color: #f7f5ef;
+  background-color: #1F1F1F;
   width: 50%;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   margin-left: auto;
   margin-right: auto;
   font-family: Tahoma;
-  color:rgb(68, 68, 68);
+  color:rgb(232, 232, 232);
 }
 
 h1, h2{
   font-weight: 500;
+  font-family: Georgia;
 }
 
 p{
   text-align: justify;
 }
 
+/* ---------- Link style ---------- */
+a:link {
+  color: #6992d6;
+  background-color: transparent;
+  text-decoration: none;
+}
 
+a:visited {
+  color: #7e7e7e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #69d69f;
+  background-color: transparent;
+  text-decoration: none;
+}
 
 /* ---------- Table style ---------- */
 table{
