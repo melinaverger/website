@@ -81,5 +81,7 @@ ul{
 @media (max-width: 500px) {
   body {
     width: 70%;
+    margin-top: 30%;
+    margin-bottom: 30%;
   }
 }
