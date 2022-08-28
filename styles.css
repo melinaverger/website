@@ -80,6 +80,6 @@ ul{
 /* ---------- Styles for mobile devices ---------- */
 @media (max-width: 500px) {
   body {
-    width: 90%;
+    width: 70%;
   }
 }
