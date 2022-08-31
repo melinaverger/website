@@ -10,12 +10,12 @@ body {
   color:rgb(232, 232, 232);
 }
 
-h1, h2{
+h1, h2 {
   font-weight: 500;
   font-family: Georgia;
 }
 
-p{
+p {
   text-align: justify;
 }
 
@@ -39,7 +39,7 @@ a:hover {
 }
 
 /* ---------- Table style ---------- */
-table{
+table {
   text-align:left;
   vertical-align:top;
 }
@@ -47,7 +47,7 @@ table{
 /* <th> stands for header cell */
 /* Overhide the "font-weight" of the "th" element in CSS */
 /* <=> first row of a table not bold */
-th{
+th {
     font-weight: normal;
     padding-top:10px;
     padding-right:60px;
@@ -55,7 +55,7 @@ th{
 }
 
 /* <td> stands for data cell */
-td{
+td {
   padding-top:10px;
   padding-right:60px;
   padding-bottom:10px;
@@ -63,7 +63,7 @@ td{
 
 
 /* ---------- List style ---------- */
-ul{
+ul {
   list-style-type: circle;
   line-height: 30px;
   text-align: justify;
@@ -71,7 +71,7 @@ ul{
 
 
 /* ---------- Specific styles ---------- */
-.bio{
+.bio {
   line-height: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -84,4 +84,113 @@ ul{
     margin-top: 15%;
     margin-bottom: 15%;
   }
+}
+
+
+/* ---------- Switch dark/light mode slider ---------- */
+/* from https://www.youtube.com/watch?v=S-T9XoCMwt4 */
+/* or the webpage https://redstapler.co/pure-css-minimal-dark-mode-toggle-button/ */
+
+/* Background of the rounded switch at the beginning */
+label {
+  width: 80px;
+  height: 40px;
+  position: relative;
+  display: block;
+  background: #242424;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Circle features into the rounded switch at the beginning */
+label:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: linear-gradient(180deg, #777, #3a3a3a);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* Hide the checkbox */
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+/* Change backgroung color of the rounded switched when clicked */
+input:checked + label {
+  background: #ebebeb;
+}
+
+/* Movements of the circle during the switch */
+input:checked + label:after {
+  left: 75px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+}
+
+/* Make the circle bigger when clicked */
+label:active:after {
+  width: 40px;
+}
+
+.background {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  z-index: -1;
+  position: absolute;
+  transition: 0.8s;
+}
+
+/* Change the .background of the webpage when clicked */
+input:checked + label + .background {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* Position the two icons */
+label svg {
+  position: absolute;
+  width: 20px;
+  top: 10px;
+  z-index: 100;
+}
+
+label svg.moon {
+  left: 10px;
+  fill: #ffffff;
+  transition: 0.3s;
+}
+
+label svg.sun {
+  left: 50px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+
+/* Switch the color of both icons */
+input:checked + label svg.moon {
+  fill: #7e7e7e;
+}
+
+input:checked + label svg.sun {
+  fill: #ffffff;
 }
