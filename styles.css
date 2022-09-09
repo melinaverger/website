@@ -212,7 +212,6 @@ details {
   position: absolute; /* absolute for being in line with other contents */
   margin-top: 1%;
   left: 71%;
-
 }
 
 @media (max-width: 500px) {
@@ -224,10 +223,10 @@ details {
 }
 
 summary {
-  writing-mode: vertical-lr;
+  writing-mode: vertical-lr; /* orientation of the text in the button */
   text-align: center;
   padding: 12px 10px;
-  width: 23px;
+  width: 23px; /* width of the menu box */
   height: 17px;
   background-color: var(--primColor);
   border: 1px solid var(--secoColor);
