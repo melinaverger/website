@@ -215,6 +215,14 @@ details {
 
 }
 
+@media (max-width: 500px) {
+  details {
+    position: absolute;
+    margin-top: 5%;
+    left: 70%;
+  }
+}
+
 summary {
   writing-mode: vertical-lr;
   text-align: center;
