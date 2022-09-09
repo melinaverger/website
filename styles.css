@@ -214,14 +214,6 @@ details {
   left: 71%;
 }
 
-@media (max-width: 500px) {
-  details {
-    position: absolute;
-    margin-top: 5%;
-    left: 70%;
-  }
-}
-
 summary {
   writing-mode: vertical-lr; /* orientation of the text in the button */
   text-align: center;
@@ -335,5 +327,16 @@ details[open]::before {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  details {
+    position: absolute;
+    margin-top: 5%;
+    left: 70%;
+  }
+  .menu {
+    left: -106px;
   }
 }
