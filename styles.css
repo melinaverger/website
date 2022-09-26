@@ -71,6 +71,9 @@ ul {
   text-align: justify;
 }
 
+.compact_list{
+  line-height: 23px;
+}
 
 /* ---------- Specific styles ---------- */
 .bio {
