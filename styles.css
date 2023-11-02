@@ -75,6 +75,14 @@ ul {
   line-height: 23px;
 }
 
+ul.custom-list {
+  font-size: 12px;
+}
+
+ul.custom-list li {
+  line-height: 1.5; /* Adjust this value to change the spacing */
+}
+
 /* ---------- Specific styles ---------- */
 .bio {
   line-height: 30px;
