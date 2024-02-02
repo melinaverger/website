@@ -1,0 +1,55 @@
+site_name: Mélina Verger
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - About: index.md
+  - Research: research.md
+  - Activities: activities.md
+  - Teaching: teaching.md
+  - Miscellaneous: miscellaneous.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
+    - toc.follow
+    - navigation.footer
+  palette:
+  # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: black  # bandeau haut
+      accent: green   # passer sur un lien
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+      primary: red
+      accent: green
+
+# Footer
+extra:
+  generator: false  # to remove "Made with Material for MkDocs"
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<melina.verger@lip6.fr>
+    - icon: fontawesome/brands/github
+      link: https://github.com/melinaverger
+  version:
+      provider: mike
